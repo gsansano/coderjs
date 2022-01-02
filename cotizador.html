@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Servicios jurídicos que presta el Estudio Nolivo, Sansano & Asociados en el Alto Valle de Río Negro y Neuquén">
+    <meta name="keywords"
+        content="ABOGADO, ABOGADA, CIVIL, COMERCIAL, DAÑOS, LABORAL, ADMINISTRATIVO, ACCIDENTES, DIVORCIOS, DEFENSOR, EMPRESAS, NEUQUÉN, RÍO NEGRO, ALTO VALLE, PATAGONIA">
+        <title>Cotizador On Line - Nolivo, Sansano & Asociados</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href=img/favicon.ico type="image/x-icon">
+    <!-- Se inserta el CDN de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/global.css">
+  </head>
+  <body>
+    <header class="navbar">
+        <a class="navbar__logo" href="Index.html"><img src="img/LogoMails.png"></a> <!-- Logo principal -->
+        <nav class="navbar">
+            <ul class="navbar__lista">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Index.html">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Nosotros.html">Nosotros</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Servicios.html">Servicios</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Clientes.html">Clientes</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="https://nolivosansanoasociados.agendapro.com/ar/workflow?local=20086"
+                        target="_blank"><button type="button" class="btn btn-light">Solicitar turno</button></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 p-5">
+                    <h2 class="fs-1">Bienvenid@ a nuestro Cotizador On Line</h2>
+                    <h5>Por favor ingrese sus datos, seleccione el servicio a cotizar y presione el botón para obtener su presupuesto.</h3>
+                    <form id="formulario_contacto" action="resultado.html">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre">
+                            <div id="textoNombre" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="email" placeholder="Ingrese su Email">
+                            <div id="textoEmail" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="text" class="form-control" id="telefono" placeholder="Ingrese su Teléfono">
+                            <div id="textoTelefono" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="provincia" class="form-label">Provincia</label>
+                            <select id="provincia" class="form-select">
+                            </select>
+                            <div id="textoProvincia" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ciudad" class="form-label">Localidad</label>
+                            <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su localidad">
+                            <div id="textoCiudad" class="form-text"></div>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="servicio" class="form-label">Servicio a cotizar</label>
+                            <select id="servicio" class="form-select">
+                            </select>
+                            <div id="textoServicio" class="form-text"></div>
+                        </div>
+                        <h6 id="line-politica" class="h6 text-primary">Términos y condiciones. Política de privacidad</h6>
+                        <div id="politica" class="text-justify"> Nuestro sitio web podrá recoger información personal por ejemplo: Nombre,
+                                información de contacto como su dirección de correo electrónica e información demográfica. Así mismo
+                                cuando sea necesario podrá ser requerida información específica para procesar algún pedido o realizar
+                                una entrega o facturación.
+                                Uso de la información recogida. Nuestro sitio web emplea la información con el fin de proporcionar el
+                                mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que
+                                aplique, y mejorar nuestros productos y servicios. Es posible que sean enviados correos electrónicos
+                                periódicamente a través de nuestro sitio con ofertas especiales, nuevos productos y otra información
+                                publicitaria que consideremos relevante para usted o que pueda brindarle algún beneficio, estos correos
+                                electrónicos serán enviados a la dirección que usted proporcione y podrán ser cancelados en cualquier
+                                momento.
+                                Estudio Nolivo, Sansano & Asociados está altamente comprometido para cumplir con el compromiso de
+                                mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para
+                                asegurarnos que no exista ningún acceso no autorizado.
+                        </div> 
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="tyc" value="ok">
+                            <label class="form-check-label" for="tyc">Acepto Términos y Condiciones</label>
+                            <div id="textoTYC" class="form-text"></div>
+                        </div><br>
+                        <button type="button" id="enviar_form" class="btn btn-primary">Cotizar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <h3>
+            <em>ESTUDIO Nolivo, Sansano & Asociados</em>
+            <br>
+            <em>Copyright 2013-2022</em>
+        </h3>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/cotizador.js"></script>
+  </body>
+</html>
